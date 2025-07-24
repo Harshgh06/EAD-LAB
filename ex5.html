@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple User Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f0f0f0;
+        }
+        .container {
+            max-width: 400px; /* Make it narrower */
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 25px; /* Slightly less padding */
+            border-radius: 6px; /* Slightly less rounded */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Lighter shadow */
+        }
+        fieldset {
+            border: 1px solid #c0c0c0; /* Simpler border */
+            padding: 15px; /* Less padding */
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+        legend {
+            font-weight: bold;
+            color: #333; /* Simpler color */
+            padding: 0 8px;
+        }
+        label {
+            display: block;
+            margin-bottom: 7px; /* Less margin */
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"] {
+            width: calc(100% - 18px); /* Adjust for padding/border */
+            padding: 8px; /* Less padding */
+            margin-bottom: 15px; /* Less margin */
+            border: 1px solid #ccc; /* Simpler border */
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #5cb85c; /* Simple green button */
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 15px;
+            width: 100%;
+        }
+        input[type="submit"]:hover {
+            background-color: #4cae4c;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <form action="#" method="post">
+            <fieldset>
+                <legend>User Information</legend>
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="user_name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="user_email" required>
+            </fieldset>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+</body>
+</html>
